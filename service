@@ -1,0 +1,10 @@
+[unit]
+Description=Run renderer
+PartOf=graphical-session-target
+
+[Service]
+ExecStart=bash -c 'sleep 10; ./~/start.sh
+Type=oneshot
+
+[Install]
+WantedBy=graphical-session.target
